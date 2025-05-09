@@ -1,0 +1,9 @@
+name: test
+on: push
+jobe:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: All test
+      run: bach -xv ./test.bash 
